@@ -1,0 +1,17 @@
+.statistics {
+  width: 200px;
+  p {
+    padding: 5px;
+    border: 2px solid #FFFFFF50;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+    background: #262115;
+    span {
+      display: inline-block;
+      width: 100%;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}

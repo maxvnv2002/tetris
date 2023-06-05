@@ -1,0 +1,19 @@
+.statistics {
+  width: 200px;
+}
+.statistics p {
+  padding: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.3137254902);
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 30px;
+  background: #262115;
+}
+.statistics p span {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=Statistics.module.css.map */

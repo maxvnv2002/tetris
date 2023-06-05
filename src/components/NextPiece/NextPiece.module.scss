@@ -1,0 +1,15 @@
+.wrap {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: min-content;
+    margin-top: 25px;
+    border: 1px solid #FFFFFF50;
+    box-sizing: content-box;
+  }
+  p {
+    font-size: 24px;
+    color: #fff;
+  }
+}

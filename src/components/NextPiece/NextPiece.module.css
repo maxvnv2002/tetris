@@ -1,0 +1,15 @@
+.wrap .grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: min-content;
+  margin-top: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.3137254902);
+  box-sizing: content-box;
+}
+.wrap p {
+  font-size: 24px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=NextPiece.module.css.map */
