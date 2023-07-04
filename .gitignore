@@ -1,4 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# IntellijIdea files
+*.iml
+.idea
+out
 
 # dependencies
 /node_modules
@@ -21,3 +25,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#styles
+*.css
+*.css.map

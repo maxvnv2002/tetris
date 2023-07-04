@@ -1,15 +1,17 @@
-.wrap .grid {
-  display: flex;
-  flex-wrap: wrap;
-  width: 200px;
-  height: min-content;
-  margin-top: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.3137254902);
-  box-sizing: content-box;
-}
-.wrap p {
-  font-size: 24px;
-  color: #fff;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import './src/variables/breakpoints';
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   NextPiece.module.scss 1:9  root stylesheet */
 
-/*# sourceMappingURL=NextPiece.module.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import './src/variables/breakpoints';\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   NextPiece.module.scss 1:9  root stylesheet";
+}

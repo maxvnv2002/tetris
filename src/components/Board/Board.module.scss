@@ -1,13 +1,13 @@
+@import "./src/variables/breakpoints";
+@import './src/variables/colors';
+
 .board {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width: calc(50px * 10);
+  width: calc($boxWidth * 10);
   margin: 0px auto;
-  background: #262115;
-  border: 1px solid #FFFFFF50;
+  background: $transparent-white;
   box-sizing: content-box;
-
-
 }
 

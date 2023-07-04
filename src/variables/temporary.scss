@@ -1,0 +1,23 @@
+.nameWrap {
+  width: 160px;
+  .name {
+    font-size: 34px;
+    //
+    background: linear-gradient(to right, rgb(0, 119, 255), #B114FF 50%, $white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.5s ease;
+    &:hover {
+      background-position: 0 100%;
+    }
+    &Hidden {
+      opacity: 0;
+    }
+    span {
+      margin-right: 34px;
+    }
+  }
+}

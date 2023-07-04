@@ -1,0 +1,82 @@
+.menu {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #190638;
+  font-family: 'Georama', sans-serif;
+  &.click {
+    .extraLightTopLeft,
+    .extraLightTopRight,
+    .extraLightBottomLeft,
+    .extraLightBottomRight {
+      animation-duration: 0.5s;
+      animation-name: pulseLight;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+    }
+  }
+
+  .extraLightTopLeft {
+    position: absolute;
+    left: 0vw;
+    top: -65vw;
+    width: 70vw;
+    height: 70vw;
+
+    background: linear-gradient( rgba(0, 255, 209, .2) 0%, rgb(0, 119, 255) 100%);
+    opacity: 0.2;
+    transform: rotate(-45deg);
+    filter: blur(5vw);
+  }
+  .extraLightTopRight {
+    position: absolute;
+    left: 30vw;
+    top: -25vw;
+    width: 40vw;
+    height: 40vw;
+
+    background: linear-gradient( rgba(71, 151, 238, .28) 0%, rgb(255, 41, 195) 100%);
+    opacity: 0.2;
+    transform: rotate(-45deg);
+    filter: blur(5vw);
+  }
+  .extraLightBottomRight {
+    position: absolute;
+    right: -15vw;
+    bottom: -15vw;
+    width: 40vw;
+    height: 40vw;
+
+    background: linear-gradient(rgba(255, 0, 168, 0) 0%, #B114FF 100%);
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    opacity: 50%;
+    filter: blur(4vw);
+  }
+  .extraLightBottomLeft {
+    position: absolute;
+    left: -25vw;
+    bottom: -25vw;
+    width: 50vw;
+    height: 50vw;
+
+    background: linear-gradient( #FFD600 0%, rgba(255, 0, 77, .5) 100%);
+    border-radius: 50%;
+    opacity: 0.2;
+    transform: rotate(-45deg);
+    filter: blur(5vw);
+  }
+}
+
+@keyframes pulseLight {
+  0% {
+    scale: 1;
+  }
+  40% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}

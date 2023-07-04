@@ -2,18 +2,24 @@ import React from 'react';
 import Statistics from "../Statistics";
 import classes from './GameOver.module.scss'
 import store from "../../store";
-import * as actions from '../../store/actionTypes'
+import * as gameActions from '../../store/actions/gameActions'
+import SmallButton from "../SmallButton";
+import {icons} from "../../constants/icons";
 const GameOver = () => {
     const resetHandler = () => {
-        store.dispatch({type: actions.resetGame})
+        store.dispatch({type: gameActions.resetGame})
     }
 
 
     return (
         <div className={classes.gameOver}>
-            <p className={classes.title}>Game Over!</p>
+            <p className={classes.title}>
+                Game
+                <span className={classes.spanPurple}>Over</span>
+                <span className={classes.spanBlink}>!</span>
+            </p>
             <Statistics/>
-            <button onClick={resetHandler}>Reset</button>
+            <SmallButton onClick={resetHandler} image={icons.restart}/>
         </div>
     );
 };

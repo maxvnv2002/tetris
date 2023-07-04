@@ -1,3 +1,5 @@
+@import './src/variables/keyframes';
+
 .gameOver {
   display: flex;
   flex-direction: column;
@@ -5,15 +7,18 @@
   justify-content: center;
   height: 80vh;
   .title {
-    font-size: 30px;
+    font-size: 55px;
+    font-weight: 900;
     color: #ffffff;
     margin-bottom: 5%;
-  }
-  button {
-    padding: 15px 25px;
-    font-size: 25px;
-    font-family: "Press Start 2P", cursive;
-    color: #4EB748;
-    background: #262115;
+    .spanPurple {
+      color: #FF14B1;
+    }
+    .spanBlink {
+      margin-left: 12px;
+      //
+      @include blink(0.75s);
+
+    }
   }
 }

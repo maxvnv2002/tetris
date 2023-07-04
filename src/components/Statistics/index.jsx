@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {memo} from 'react';
 import classes from './Statistics.module.scss'
 import {useSelector} from "react-redux";
 
 const Statistics = () => {
-    const {score, lines, level} = useSelector(state => state)
+    const score = useSelector(state => state.game.score);
+    const lines = useSelector(state => state.game.lines);
+    const level = useSelector(state => state.game.level);
 
     return (
         <div className={classes.statistics}>

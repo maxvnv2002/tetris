@@ -1,19 +1,17 @@
-.statistics {
-  width: 200px;
-}
-.statistics p {
-  padding: 5px;
-  border: 2px solid rgba(255, 255, 255, 0.3137254902);
-  font-size: 24px;
-  color: #fff;
-  margin-bottom: 30px;
-  background: #262115;
-}
-.statistics p span {
-  display: inline-block;
-  width: 100%;
-  margin-top: 10px;
-  text-align: center;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "./src/variables/breakpoints";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   Statistics.module.scss 1:9  root stylesheet */
 
-/*# sourceMappingURL=Statistics.module.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"./src/variables/breakpoints\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Statistics.module.scss 1:9  root stylesheet";
+}

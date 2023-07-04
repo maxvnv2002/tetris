@@ -11,5 +11,6 @@ export function getFramesByLevel(level) {
     if (level > 15 && level <= 18) startFrames = 3
     if (level > 18 && level <= 28) startFrames = 2
     if (level >= 29) startFrames = 1
-    return startFrames
+
+    return startFrames / 60  * 1000
 }

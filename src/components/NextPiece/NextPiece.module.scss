@@ -1,11 +1,14 @@
+@import './src/variables/breakpoints';
+
 .wrap {
   .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
+    width: calc($boxWidth * 4);
     height: min-content;
     margin-top: 25px;
     border: 1px solid #FFFFFF50;
+    border-radius: 12px;
     box-sizing: content-box;
   }
   p {

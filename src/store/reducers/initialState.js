@@ -35,7 +35,8 @@ export const getInitialState = () => {
             rotationIndex: 0
         },
         nextPiece: getRandomFigure(),
-        isGameOver: false
+        isGameOver: false,
+        isGamePaused: false
     }
     return initialState
 }

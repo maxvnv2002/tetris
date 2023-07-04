@@ -1,0 +1,92 @@
+@import "./src/variables/colors";
+@import './src/variables/adaptive';
+@import './src/variables/keyframes';
+
+.playForm {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 120px);
+
+  padding: 128px 0px 128px;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  @include _md {
+    justify-content: space-around;
+    padding: 0;
+  }
+  @include _md {
+
+  }
+  @include _sm {
+    height: calc(100vh - 195px);
+  }
+  .title {
+    margin-bottom: 32px;
+    font-weight: 800;
+    font-size: 106px;
+    text-align: center;
+    span {
+      color: #FF14B1;
+    }
+
+  }
+  .choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      position: relative;
+      @include _md {
+        font-size: 12vmin;
+      }
+      @include _sm {
+
+      }
+      .dash {
+        color: #fff;
+        font-weight: 300;
+        margin-left: 1vmin;
+        //
+        @include blink;
+        @include _xl {
+          right: 200px;
+          top: 50%;
+          height: 50%;
+        }
+        @include _lg {
+          right: 75px;
+
+        }
+        @include _md {
+          right: 50px;
+        }
+      }
+    }
+  }
+  .gameMode {
+    .hint {
+      font-size: 45px;
+      @include _md {
+        font-size: 8vmin;
+      }
+      span {
+        color: #B114FF;
+      }
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  &Hidden {
+    opacity: 0;
+  }
+}
+

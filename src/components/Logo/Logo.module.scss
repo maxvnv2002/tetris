@@ -1,0 +1,10 @@
+@import "./src/variables/adaptive";
+.image {
+  position: relative;
+  z-index: 3;
+  width: 300px;
+  cursor: pointer;
+  @include _xs {
+    width: 270px;
+  }
+}

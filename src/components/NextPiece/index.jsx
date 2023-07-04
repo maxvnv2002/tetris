@@ -4,7 +4,7 @@ import {colors} from "../../constants/colors";
 import classes from "./NextPiece.module.scss";
 
 const NextPiece = () => {
-    const nextPiece = useSelector(state => state.nextPiece.blocks);
+    const nextPiece = useSelector(state => state.game.nextPiece.blocks);
     const nextPieceArray = [
         [0,0,0,0],
         [0,0,0,0],
@@ -18,14 +18,15 @@ const NextPiece = () => {
     }
     return (
         <div className={classes.wrap}>
-            <p>Next piece:</p>
+            <p>Next:</p>
             <div className={classes.grid}>
                 {nextPieceArray.map((row, rowIndex) => {
                     return row.map((cell, cellIndex) => (
-                        <div className={'box'}
-                             style={{background: cell ? colors[cell - 1] : ""}}
+                        <div
+                            key={`${rowIndex}.${cellIndex}`}
+                            className={'box'}
+                            style={{background: cell ? colors[cell - 1] : ""}}
                         >
-
                         </div>
                     ))
                 })}

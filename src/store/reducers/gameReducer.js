@@ -1,5 +1,5 @@
 import {getInitialState} from "./initialState";
-import * as actions from '../actionTypes'
+import * as actions from '../actions/gameActions'
 import {figuresForms} from "../../constants/figuresInfo";
 import {getRandomFigure} from "../../functions/getRandomFigure";
 import {points} from "../../constants/points";
@@ -138,9 +138,7 @@ function clearLines (playField, score, lines) {
             linesToClear.unshift(y)
         }
     }
-    console.log(linesToClear)
     for (let line of linesToClear) {
-        console.log(line)
         playField.splice(line, 1)
         playField.unshift(new Array(10).fill(0,0))
     }

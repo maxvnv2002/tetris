@@ -1,0 +1,12 @@
+@import "./src/variables/breakpoints";
+@import './src/variables/colors';
+
+.buttonsGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  button {
+    font-size: 25px;
+    margin-bottom: 12px;
+  }
+}
