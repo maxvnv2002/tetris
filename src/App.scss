@@ -1,5 +1,6 @@
-@import "variables/breakpoints";
-@import "./variables/adaptive.scss";
+@import "assets/styles/variables/adaptive";
+@import "assets/styles/variables/breakpoints";
+
 
 *, *:after, *:before {
   padding: 0;

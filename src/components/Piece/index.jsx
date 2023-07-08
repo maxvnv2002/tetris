@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import {colors} from "../../constants/colors";
-import variables from '../../variables/breakpoints.scss';
+import variables from '../../assets/styles/variables/breakpoints.scss';
 import classes from './Piece.module.scss'
-import {getFramesByLevel} from "../../functions/getFramesByLevel";
+import {getFramesByLevel} from "./helpers/getFramesByLevel";
 import store from "../../store";
 import * as actions from "../../store/actions/gameActions";
-import {keyDownHandler} from "../../functions/keyDownHandler";
+import {keyDownHandler} from "./helpers/keyDownHandler";
 
 const Piece = () => {
     const {x: pieceX, y: pieceY, figure} = useSelector(state => state.game.activePiece);

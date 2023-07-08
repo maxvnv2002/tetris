@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from "./ProgressGroup.module.scss";
-import RangeBar from "../RangeBar";
+import RangeBar from "../../UIKit/RangeBar";
 import {useSelector} from "react-redux";
-import Music from "../../assets/Music";
+import Music from "../../assets/img/Music";
 import store from "../../store";
 import * as actions from '../../store/actions/settingsActions'
 

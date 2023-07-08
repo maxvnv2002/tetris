@@ -8,5 +8,6 @@ export const icons = {
     people: '⛹',
     leaderboards: '🏆',
     gamepad: '🎮',
-    lightning: '⚡'
+    lightning: '⚡',
+    warning: '⚠'
  }

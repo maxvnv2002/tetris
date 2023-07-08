@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import SmallButton from "../SmallButton";
+import SmallButton from "../../UIKit/SmallButton";
 import classes from './NavMenu.module.scss'
 import {useSelector} from "react-redux";
 import {icons} from "../../constants/icons";
 import store from "../../store";
-import {showSettings} from "../../store/actions/settingsActions";
 import {useLocation} from "react-router-dom";
+import * as settingsActions from "../../store/actions/settingsActions";
 
 const NavMenu = () => {
     const location = useLocation();
@@ -20,7 +20,7 @@ const NavMenu = () => {
 
 
     const settingsClickHandler = () => {
-        store.dispatch({type: showSettings})
+        store.dispatch({type: settingsActions.showSettings, payload: true})
     }
 
 

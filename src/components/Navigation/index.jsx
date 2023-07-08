@@ -5,14 +5,15 @@ import store from "../../store";
 import * as settingsActions from "../../store/actions/settingsActions";
 import * as gameActions from "../../store/actions/gameActions";
 import NavMenu from "../NavMenu";
-import {useNavigate, useOutlet} from "react-router-dom";
-import {resetGame} from "../../store/actions/gameActions";
+import {useNavigate} from "react-router-dom";
+import GreetingAnimation from "../GreetingAnimation";
 
 const Navigation = () => {
     const navigate = useNavigate()
     const logoClickHandler = () => {
         navigate('/tetris');
-        store.dispatch({type: resetGame})
+        store.dispatch({type: gameActions.resetGame})
+        store.dispatch({type: settingsActions.showSettings, payload: false})
     }
 
     const [isNameAnimating, setIsNameAnimating] = useState(true)
@@ -43,26 +44,11 @@ const Navigation = () => {
                     </li>
                 </ul>
             </div>
-            {
-                isNameAnimating && (
-                    <div className={`${classes.greeting} ${classes.nameGreeting}`}>
-                        <p className={classes.name}
-                           onAnimationEnd={nameAnimationEnd}
-                        >
-                           mxvnv
-                        </p>
-                    </div>
-                )
-            }
-            {
-                isLogoAnimating && (
-                    <div className={`${classes.greeting} ${classes.logoGreeting}`}>
-                        <Logo className={classes.logo}
-                              onAnimationEnd={logoAnimationEnd}
-                        />
-                    </div>
-                )
-            }
+            <GreetingAnimation isNameAnimating={isNameAnimating}
+                               isLogoAnimating={isLogoAnimating}
+                               nameAnimationEnd={nameAnimationEnd}
+                               logoAnimationEnd={logoAnimationEnd}
+            />
         </nav>
     );
 };

@@ -4,20 +4,22 @@ import store from "../../store";
 import * as gameActions from '../../store/actions/gameActions';
 import * as settingsActions from '../../store/actions/settingsActions';
 import {useNavigate} from "react-router-dom";
-import SmallButton from "../SmallButton";
+import SmallButton from "../../UIKit/SmallButton";
 import {icons} from "../../constants/icons";
 
 const PauseMenu = () => {
     const navigate = useNavigate();
     const playHandler = () => {
-        store.dispatch({ type: settingsActions.showSettings })
+        store.dispatch({ type: settingsActions.showSettings, payload: false })
     }
     const restartHandler = () => {
         store.dispatch({ type: gameActions.resetGame })
+        store.dispatch({ type: settingsActions.showSettings, payload: false })
     }
     const homeRedirectHandler = () => {
         navigate('/tetris')
         store.dispatch({ type: gameActions.resetGame })
+        store.dispatch({ type: settingsActions.showSettings, payload: false })
     }
 
     return (

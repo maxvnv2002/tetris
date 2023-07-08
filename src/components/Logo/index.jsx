@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/Tetris-logo.png'
+import logo from '../../assets/img/Tetris-logo.png'
 import classes from './Logo.module.scss'
 const Logo = ({className, onAnimationEnd, onClick}) => {
     return (
