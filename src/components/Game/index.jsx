@@ -8,18 +8,18 @@ import PauseMenu from "../PauseMenu";
 import {useSelector} from "react-redux";
 import store from "../../store";
 import * as settingsActions from "../../store/actions/settingsActions";
-import SettingsPopup from "../SettingsPopup";
 import ProgressGroup from "../ProgressGroup";
-import SmallButton from "../../UIKit/SmallButton";
-import {icons} from "../../constants/icons";
 import Popup from "../Popup";
 
 
 const Game = () => {
     const isGameOver = useSelector(state => state.game.isGameOver)
     const isSettingsShowed = useSelector(state => state.settings.isSettingsShowed)
+    const isLeaderBoardShowed = useSelector(state => state.settings.isLeaderBoardShowed)
+    const isAnyPopupShowed = isLeaderBoardShowed || isSettingsShowed
+
     const gamePauseHandler = () => {
-        store.dispatch({type: settingsActions.showSettings, payload: true})
+        store.dispatch({type: settingsActions.showPopup, payload: {isSettingsShowed: true}})
     }
     const ecsKeyHandler = (event) => {
         if (event.key === 'Escape') {
@@ -42,18 +42,15 @@ const Game = () => {
                     <div className={classes.game}>
                         <Statistics/>
                         {
-                            !isSettingsShowed && <Board/>
+                            !isAnyPopupShowed && <Board/>
                         }
                         <NextPiece/>
                     </div>
             }
             {
                 isSettingsShowed && (
-                    <Popup title={'Settings'}>
-                        <>
-                            <ProgressGroup/>
-                            <PauseMenu/>
-                        </>
+                    <Popup title={'Settings'} anotherButton={<PauseMenu/>}>
+                        <ProgressGroup/>
                     </Popup>
                 )
             }

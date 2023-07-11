@@ -9,5 +9,9 @@ export const icons = {
     leaderboards: '🏆',
     gamepad: '🎮',
     lightning: '⚡',
-    warning: '⚠'
+    warning: '⚠',
+    firstPlace: '🥇',
+    secondPlace: '🥈',
+    thirdPlace: '🥉',
+    medal: '🏅'
  }

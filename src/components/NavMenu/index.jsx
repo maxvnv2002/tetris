@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import SmallButton from "../../UIKit/SmallButton";
 import classes from './NavMenu.module.scss'
 import {useSelector} from "react-redux";
@@ -20,7 +20,10 @@ const NavMenu = () => {
 
 
     const settingsClickHandler = () => {
-        store.dispatch({type: settingsActions.showSettings, payload: true})
+        store.dispatch({type: settingsActions.showPopup, payload: { isSettingsShowed: true }})
+    }
+    const leaderBoardClickHandler = () => {
+        store.dispatch({type: settingsActions.showPopup, payload: { isLeaderBoardShowed: true }})
     }
 
 
@@ -28,7 +31,7 @@ const NavMenu = () => {
     return (
         (<menu className={menuClasses}>
             <SmallButton image={icons.people}/>
-            <SmallButton image={icons.leaderboards}/>
+            <SmallButton image={icons.leaderboards} onClick={leaderBoardClickHandler}/>
             <SmallButton image={settingsImage} onClick={settingsClickHandler}/>
         </menu>)
     );

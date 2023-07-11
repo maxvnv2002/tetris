@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {memo, useState} from 'react';
 import Logo from "../Logo";
 import classes from './Navigation.module.scss'
 import store from "../../store";
@@ -8,12 +8,12 @@ import NavMenu from "../NavMenu";
 import {useNavigate} from "react-router-dom";
 import GreetingAnimation from "../GreetingAnimation";
 
-const Navigation = () => {
+const Navigation = memo(() => {
     const navigate = useNavigate()
     const logoClickHandler = () => {
         navigate('/tetris');
-        store.dispatch({type: gameActions.resetGame})
-        store.dispatch({type: settingsActions.showSettings, payload: false})
+        store.dispatch({ type: gameActions.resetGame })
+        store.dispatch({ type: settingsActions.hidePopup })
     }
 
     const [isNameAnimating, setIsNameAnimating] = useState(true)
@@ -51,6 +51,6 @@ const Navigation = () => {
             />
         </nav>
     );
-};
+});
 
 export default Navigation;

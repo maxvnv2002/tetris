@@ -10,16 +10,16 @@ import {icons} from "../../constants/icons";
 const PauseMenu = () => {
     const navigate = useNavigate();
     const playHandler = () => {
-        store.dispatch({ type: settingsActions.showSettings, payload: false })
+        store.dispatch({ type: settingsActions.hidePopup })
     }
     const restartHandler = () => {
         store.dispatch({ type: gameActions.resetGame })
-        store.dispatch({ type: settingsActions.showSettings, payload: false })
+        store.dispatch({ type: settingsActions.hidePopup })
     }
     const homeRedirectHandler = () => {
         navigate('/tetris')
         store.dispatch({ type: gameActions.resetGame })
-        store.dispatch({ type: settingsActions.showSettings, payload: false })
+        store.dispatch({ type: settingsActions.hidePopup})
     }
 
     return (

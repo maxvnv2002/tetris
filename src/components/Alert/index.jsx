@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {memo, useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import * as settingsActions from '../../store/actions/settingsActions'
 import store from "../../store";
@@ -7,7 +7,7 @@ import classes from './Alert.module.scss'
 import {icons} from "../../constants/icons";
 
 
-const Alert = () => {
+const Alert = memo(() => {
     const { text: alertName, isShowed } = useSelector(state => state.settings.alert)
     const [alertClasses, setAlertClasses] = useState(classNames(classes.alert))
     useEffect(() => {
@@ -22,7 +22,7 @@ const Alert = () => {
                         isShowed: false
                     }
                 })
-            }, 1000)
+            }, 2000)
         }
     }, [isShowed])
 
@@ -38,6 +38,6 @@ const Alert = () => {
             </p>
         </div>
     );
-};
+});
 
 export default Alert;

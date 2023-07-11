@@ -1,9 +1,9 @@
 import * as actions from '../actions/settingsActions'
-import {updateAlert} from "../actions/settingsActions";
 
 const initialState = {
     isGreeting: true,
     isSettingsShowed: false,
+    isLeaderBoardShowed: false,
     musicVolume: 50,
     soundVolume: 50,
     alert: {
@@ -16,8 +16,10 @@ export default function settingsReducer(state = initialState, action) {
     switch (action.type) {
         case actions.stopGreeting:
             return {...state, isGreeting: false}
-        case actions.showSettings:
-            return {...state, isSettingsShowed: action.payload}
+        case actions.showPopup:
+            return {...state, ...action.payload}
+        case actions.hidePopup:
+            return {...state, isSettingsShowed: false, isLeaderBoardShowed: false}
         case actions.updateMusicVolume:
             return {...state, musicVolume: action.payload}
         case actions.updateSoundVolume:
