@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="90dd7182-7a11-4147-8a9d-9a4c29197fa6" name="Changes" comment="An action Creator was created to display an alert with the transmitted message">
+      <change afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/App.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/UIKit/Input/Input.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/UIKit/Input/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/UIKit/LargeButton/LargeButton.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/UIKit/LargeButton/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/UIKit/RangeBar/RangeBar.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/UIKit/RangeBar/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/UIKit/SmallButton/SmallButton.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/UIKit/SmallButton/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Home/Home.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Home/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Music/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Play/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Restart/Restart.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Restart/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Settings/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/Tetris-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/img/circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/styles/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/styles/variables/adaptive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/styles/variables/breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/styles/variables/colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/styles/variables/keyframes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/styles/variables/mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Alert/Alert.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Alert/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Board/Board.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Board/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Game/GamePage.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Game/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/GameOver/GameOver.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/GameOver/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/GreetingAnimation/GreetingAnimation.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/GreetingAnimation/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/LeaderBoard/LeaderBoard.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/LeaderBoard/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Logo/Logo.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Logo/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MainMenu/MainMenu.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MainMenu/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/NavMenu/NavMenu.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/NavMenu/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Navigation/Navigation.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Navigation/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/NextPiece/NextPiece.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/NextPiece/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/PauseMenu/PauseMenu.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/PauseMenu/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Piece/Piece.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Piece/helpers/getFramesByLevel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Piece/helpers/keyDownHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Piece/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Popup/Popup.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Popup/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/ProgressGroup/ProgressGroup.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/ProgressGroup/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/SettingsPopup/SettingsPopup.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/SettingsPopup/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Statistics/Statistics.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Statistics/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/colors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/figuresInfo/figures/I-Figure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/figuresInfo/figures/J-Figure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/figuresInfo/figures/L-Figure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/figuresInfo/figures/Q-Figure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/figuresInfo/figures/S-Figure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/figuresInfo/figures/T-Figure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/figuresInfo/figures/Z-Figure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/figuresInfo/figuresInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/constants/points.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/MainPage/MainPage.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/MainPage/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/routes/appRoutes.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/actionCreators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/actions/gameActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/actions/settingsActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/reducers/gameReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/reducers/helpers/getGameInitialState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/reducers/helpers/getRandomFigure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/reducers/settingsReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UIKit/Input/Input.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UIKit/Input/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UIKit/LargeButton/LargeButton.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UIKit/LargeButton/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UIKit/RangeBar/RangeBar.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UIKit/RangeBar/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UIKit/SmallButton/SmallButton.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UIKit/SmallButton/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Home/Home.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Home/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Music/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Play/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Restart/Restart.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Restart/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Settings/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/Tetris-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/variables/adaptive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/variables/breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/variables/colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/variables/keyframes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/variables/mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/variables/temporary.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Alert/Alert.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Alert/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.module.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Game/GamePage.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Game/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GameOver/GameOver.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GameOver/GameOver.module.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GameOver/GameOver.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GameOver/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GreetingAnimation/GreetingAnimation.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GreetingAnimation/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeaderBoard/LeaderBoard.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeaderBoard/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Logo/Logo.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Logo/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainMenu/MainMenu.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainMenu/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavMenu/NavMenu.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavMenu/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NextPiece/NextPiece.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NextPiece/NextPiece.module.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NextPiece/NextPiece.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NextPiece/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PauseMenu/PauseMenu.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PauseMenu/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Piece/Piece.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Piece/helpers/getFramesByLevel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Piece/helpers/keyDownHandler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Piece/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Popup/Popup.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Popup/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProgressGroup/ProgressGroup.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProgressGroup/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SettingsPopup/SettingsPopup.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SettingsPopup/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Statistics/Statistics.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Statistics/Statistics.module.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Statistics/Statistics.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Statistics/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/colors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/figuresInfo/figures/I-Figure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/figuresInfo/figures/J-Figure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/figuresInfo/figures/L-Figure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/figuresInfo/figures/Q-Figure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/figuresInfo/figures/S-Figure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/figuresInfo/figures/T-Figure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/figuresInfo/figures/Z-Figure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/figuresInfo/figuresInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/points.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/MainPage.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MainPage/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/appRoutes.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actionCreators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/gameActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/settingsActions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/gameReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/helpers/getGameInitialState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/helpers/getRandomFigure.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/settingsReducer.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="com.haulmont.rcb.palette" />
+        <option value="com.haulmont.rcb.previews" />
+        <option value="com.haulmont.rcb.index" />
+        <option value="com.haulmont.rcb.useInitial" />
+        <option value="com.haulmont.rcb.README" />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Q4LdHtaJfSB0HwQlx7AnRM5496" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ReactCreateComponentLastSelected&quot;: &quot;arrowFunctionComponent&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Максим/Desktop/Pet Project/tetris-app/src/constants/figuresInfo/figures&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.EJS&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Programs\\WebStorm 2022.3.4\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Максим\Desktop\Pet Project\tetris-app\src\constants\figuresInfo\figures" />
+      <recent name="C:\Users\Максим\Desktop\Pet Project\tetris-app\src\components" />
+      <recent name="C:\Users\Максим\Desktop\Pet Project\tetris-app\src\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Максим\Desktop\Pet Project\tetris-app\client" />
+      <recent name="C:\Users\Максим\Desktop\Pet Project\tetris-app\src\constants\figuresInfo" />
+      <recent name="C:\Users\Максим\Desktop\Pet Project\tetris-app\src\components" />
+      <recent name="C:\Users\Максим\Desktop\Pet Project\tetris-app\src\assets\img" />
+      <recent name="C:\Users\Максим\Desktop\Pet Project\tetris-app\src\assets\styles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90dd7182-7a11-4147-8a9d-9a4c29197fa6" name="Changes" comment="" />
+      <created>1684607999811</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684607999811</updated>
+      <workItem from="1684608000602" duration="8863000" />
+      <workItem from="1684781046985" duration="2364000" />
+      <workItem from="1684833823456" duration="2712000" />
+      <workItem from="1685019034941" duration="4422000" />
+      <workItem from="1685181935848" duration="11392000" />
+      <workItem from="1685288196925" duration="7407000" />
+      <workItem from="1685302696274" duration="676000" />
+      <workItem from="1685371195300" duration="4465000" />
+      <workItem from="1685538643595" duration="4001000" />
+      <workItem from="1685625003985" duration="13859000" />
+      <workItem from="1685732038742" duration="9424000" />
+      <workItem from="1685805568698" duration="4132000" />
+      <workItem from="1685888493962" duration="11040000" />
+      <workItem from="1685969887948" duration="15040000" />
+      <workItem from="1686304686017" duration="11967000" />
+      <workItem from="1686662197592" duration="4862000" />
+      <workItem from="1686772773642" duration="3423000" />
+      <workItem from="1686837010577" duration="514000" />
+      <workItem from="1686953333728" duration="4299000" />
+      <workItem from="1686996802754" duration="6596000" />
+      <workItem from="1687008086131" duration="3007000" />
+      <workItem from="1687018578074" duration="1154000" />
+      <workItem from="1687256773900" duration="2820000" />
+      <workItem from="1687282992974" duration="3511000" />
+      <workItem from="1687881051658" duration="12631000" />
+      <workItem from="1687971676968" duration="11051000" />
+      <workItem from="1688057500231" duration="14235000" />
+      <workItem from="1688123457445" duration="5459000" />
+      <workItem from="1688132526284" duration="1412000" />
+      <workItem from="1688206658189" duration="1856000" />
+      <workItem from="1688285471551" duration="27281000" />
+      <workItem from="1688370879544" duration="7916000" />
+      <workItem from="1688460877790" duration="12078000" />
+      <workItem from="1688580917063" duration="3271000" />
+      <workItem from="1688629861955" duration="14601000" />
+      <workItem from="1688661951061" duration="1038000" />
+      <workItem from="1688663751653" duration="2213000" />
+      <workItem from="1688733310140" duration="6561000" />
+      <workItem from="1688849933509" duration="2159000" />
+      <workItem from="1688852142728" duration="126000" />
+      <workItem from="1688916885839" duration="310000" />
+      <workItem from="1689008511687" duration="3155000" />
+      <workItem from="1689011681513" duration="6495000" />
+      <workItem from="1689064990533" duration="8396000" />
+      <workItem from="1689328693122" duration="805000" />
+      <workItem from="1689335919346" duration="1044000" />
+      <workItem from="1689343844718" duration="118000" />
+      <workItem from="1689343970510" duration="4296000" />
+      <workItem from="1689431316391" duration="5646000" />
+      <workItem from="1689597880979" duration="3143000" />
+      <workItem from="1693754049942" duration="32000" />
+      <workItem from="1694023613571" duration="916000" />
+      <workItem from="1695248271735" duration="1130000" />
+    </task>
+    <task id="LOCAL-00001" summary="The structure of the src folder was changed, Routes were moved to a separate component, styles were moved to assets and imported into one index.scss, the functions used were removed from the root of src and moved to helpers for components, the game logic in gameReducer was commented and explained, the UI Kit folder for reused UI components was also created. And bugs have been fixed">
+      <created>1688851560184</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688851560184</updated>
+    </task>
+    <task id="LOCAL-00002" summary="The structure of the src folder was changed, Routes were moved to a separate component, styles were moved to assets and imported into one index.scss, the functions used were removed from the root of src and moved to helpers for components, the game logic in gameReducer was commented and explained, the UI Kit folder for reused UI components was also created. And bugs have been fixed">
+      <created>1688851631454</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688851631454</updated>
+    </task>
+    <task id="LOCAL-00003" summary="The structure of the src folder was changed, Routes were moved to a separate component, styles were moved to assets and imported into one index.scss, the functions used were removed from the root of src and moved to helpers for components, the game logic in gameReducer was commented and explained, the UI Kit folder for reused UI components was also created. And bugs have been fixed">
+      <created>1688851865661</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688851865661</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Alerts were added, unnecessary renderers were removed, the popup component was changed, the leaderboard component and background-lights were added, and they were placed in a separate component">
+      <created>1689080298642</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689080298642</updated>
+    </task>
+    <task id="LOCAL-00005" summary="An action Creator was created to display an alert with the transmitted message">
+      <created>1689080819370</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689080819370</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="The structure of the src folder was changed, Routes were moved to a separate component, styles were moved to assets and imported into one index.scss, the functions used were removed from the root of src and moved to helpers for components, the game logic in gameReducer was commented and explained, the UI Kit folder for reused UI components was also created. And bugs have been fixed" />
+    <MESSAGE value="Alerts were added, unnecessary renderers were removed, the popup component was changed, the leaderboard component and background-lights were added, and they were placed in a separate component" />
+    <MESSAGE value="An action Creator was created to display an alert with the transmitted message" />
+    <option name="LAST_COMMIT_MESSAGE" value="An action Creator was created to display an alert with the transmitted message" />
+  </component>
+</project>

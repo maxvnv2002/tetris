@@ -1,0 +1,12 @@
+@import './src/assets/styles/index';
+
+
+.game {
+  display: flex;
+  justify-content: space-between;
+  .sidebar {
+    button {
+      margin-top: 30px;
+    }
+  }
+}

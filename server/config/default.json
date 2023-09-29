@@ -1,0 +1,4 @@
+{
+  "serverPort": 5000,
+  "dbUrl": "mongodb+srv://ivanovmax2002:APLBABNBQO@game.ej3mhgv.mongodb.net/?retryWrites=true&w=majority"
+}

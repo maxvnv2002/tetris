@@ -1,0 +1,13 @@
+@import './src/assets/styles/index';
+
+
+.board {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc($boxWidth * 10);
+  margin: 0px auto;
+  background: $transparent-white;
+  box-sizing: content-box;
+}
+

@@ -1,0 +1,14 @@
+@import './src/assets/styles/index';
+
+.buttonsGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  button {
+    font-size: 25px;
+    margin-bottom: 12px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

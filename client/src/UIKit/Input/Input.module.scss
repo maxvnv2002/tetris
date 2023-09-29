@@ -1,0 +1,13 @@
+@import './src/assets/styles/index';
+
+.input {
+  width: 300px;
+  padding: 16px 32px;
+  border-radius: 12px;
+  background: $transparent-white;
+  font-family: 'Georama', sans-serif;
+  color: $white;
+  font-size: 22px;
+  border: none;
+  outline: none;
+}
